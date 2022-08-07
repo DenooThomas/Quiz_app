@@ -55,7 +55,7 @@ export default function Quiz(props){
     setQuestions()
 
     return (
-        <div>
+        <React.Fragment>
            <form onSubmit={handleSubmit}>
                {questionElements}
                <div className='question-submit-cont'>
@@ -64,6 +64,6 @@ export default function Quiz(props){
            </form>
             {isForm && <h3 className='question-score'>You scored {scoreCounter}/{formData.length} correct answers</h3>}
             {isForm && <button className="home-button" onClick={() => props.startQuiz()}>Play again</button>}
-        </div>
+        </React.Fragment>
     )      
 }
