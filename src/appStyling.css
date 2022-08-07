@@ -1,0 +1,57 @@
+
+
+.main-cont {
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quizOff {
+    height: 100vh;
+}
+
+.quizOn {
+    height: 100%;
+    padding: 20px 0;
+}
+
+/**** HOMEPAGE ****/
+
+.home {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 200px;
+}
+
+.home-title, .home-subtitle{
+    flex-basis: 100%;
+    text-align: center;
+}
+
+.home-subtitle{
+    font-weight: normal;
+}
+
+.home-button, .question-submit  {
+    color: #FFFF;
+    border-radius: 15px;
+    border: none;
+    background-color: #4D5B9E;
+    font-size: 16px;
+    padding: 10px 40px;
+}
+
+.home-button:hover, .question-submit:hover{
+    cursor: pointer;
+}
+
+
+
+/*** STATES ***/
+
+.submitted {
+    pointer-events: none;
+    font-size: 1.1em;       
+}

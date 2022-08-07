@@ -1,0 +1,63 @@
+
+.answer-legend {
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+
+.answer-cont {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.answer-item {
+    padding: 8px 20px;
+    border-radius: 15px;
+    border: 1px solid transparent;
+}
+
+.answer-answer:hover{
+    cursor: pointer;
+}
+
+
+.answer-radio{
+    display: none;
+}
+
+.answer-label {
+    font-size: 1.1em;
+}
+.answer-label:hover{
+    cursor: pointer;
+}
+
+
+
+
+/**** STATES ****/
+
+.submitted {
+    pointer-events: none;
+    font-size: 1.1em;       
+}
+
+.wrong {
+    background-color: #F8BCBC;
+}
+
+.not-selected {
+    background-color: #F5F7FB;
+    color: #293264af;
+    border: 1px solid transparent;
+}
+
+.correct {
+    background-color: #94D7A2;
+}
+
+.selected {
+    background-color: #D6DBF5;
+}

@@ -1,0 +1,10 @@
+/**** QUIZ ****/
+.question-submit-cont {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.question-score{
+    text-align: center;
+}
