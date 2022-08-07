@@ -46,12 +46,12 @@ export default function App(){
                 <button className="home-button" onClick={startQuiz}>Start quiz</button>
             </div> 
             :
-            <div>
+            <React.Fragment>
             <Quiz 
                 data={apiData}
                 startQuiz={startQuiz}
             />
-            </div>
+            </React.Fragment>
             }
         </div>
     )
