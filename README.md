@@ -5,7 +5,7 @@ Simple quiz application using the openTDB API.
 ## Demo
 ### Live demo: https://quiz-app-delta-virid.vercel.app/
 
-### Installation
+## Installation
 
 ```
 git clone https://github.com/DenooThomas/quiz_app
