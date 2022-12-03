@@ -12,7 +12,7 @@ function Home(props) {
       {quizStarted
         ? (
           <Quiz
-            data={apiData}
+            apiData={apiData}
             setQuizStarted={setQuizStarted}
           />
         )

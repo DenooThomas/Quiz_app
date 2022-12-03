@@ -4,7 +4,7 @@ import './appStyling.css';
 import Home from 'components/Home/Home';
 
 export default function App() {
-  const [apiData, setApiData] = useState();
+  const [apiData, setApiData] = useState([]);
   console.log('apiData => ', apiData);
   const fetchData = () => {
     fetch('https://opentdb.com/api.php?amount=5&type=multiple')
