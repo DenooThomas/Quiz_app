@@ -1,25 +1,30 @@
-import React from 'react'
-import Quiz from 'components/Quiz/Quiz'
+import React from 'react';
+import Quiz from 'components/Quiz/Quiz';
 
-function Home({quizStarted, startQuiz, apiData}) {
+function Home(props) {
+  const { quizStarted, setQuizStarted, apiData } = props;
+
+  function startQuiz() {
+    setQuizStarted(true);
+  }
   return (
-    <div className={`main-cont ${quizStarted ? "quizOn" : "quizOff"}`}>
-            {!quizStarted ? 
-            <div className="home">
-                <h1 className="home-title">Quizzical</h1>
-                <h2 className="home-subtitle">Different questions every time!</h2>
-                <button className="home-button" onClick={startQuiz}>Start quiz</button>
-            </div> 
-            :
-            <React.Fragment>
-            <Quiz 
-                data={apiData}
-                startQuiz={startQuiz}
-            />
-            </React.Fragment>
-            }
-        </div>
-  )
+    <div className={`main-cont ${quizStarted ? 'quizOn' : 'quizOff'}`}>
+      {quizStarted
+        ? (
+          <Quiz
+            data={apiData}
+            setQuizStarted={setQuizStarted}
+          />
+        )
+        : (
+          <div className="home">
+            <h1 className="home-title">Quizzical</h1>
+            <h2 className="home-subtitle">Different questions every time!</h2>
+            <button type="button" className="home-button" onClick={startQuiz}>Start quiz</button>
+          </div>
+        )}
+    </div>
+  );
 }
 
-export default Home
+export default Home;
